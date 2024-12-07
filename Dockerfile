@@ -8,5 +8,5 @@ ARG OS="linux"
 COPY .build/${OS}-${ARCH}/ibmslapd_exporter /bin/ibmslapd_exporter
 
 USER        nobody
-EXPOSE      9122
+EXPOSE      9981
 ENTRYPOINT  [ "/bin/ibmslapd_exporter" ]
